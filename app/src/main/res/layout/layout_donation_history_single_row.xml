@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginBottom="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:id="@+id/txtDonationHistoryId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_id_placeholder"
+            android:layout_marginBottom="6dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtDonationHistoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_amit_kumar"
+            android:layout_below="@id/txtDonationHistoryId"
+            android:textSize="15sp"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/txtDonationHistoryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@id/txtDonationHistoryName"
+            android:text="@string/request_date_22_04_2022_02_32_11"
+            android:layout_marginBottom="6dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txtDonationHistoryDate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/status"/>
+
+            <TextView
+                android:id="@+id/txtDonationHistoryStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="5dp"
+                android:text="@string/completed"
+                android:textStyle="bold"
+                android:textColor="@color/green_500"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_primary_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlDonorProfileContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp">
+
+        <RelativeLayout
+            android:id="@+id/cardDonorProfilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="2dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imgDonorProfilePic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/user_icon"
+                    android:src="@drawable/user_icon" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ProgressBar
+                android:id="@+id/progressDonorProfilePic"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/orange_700"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtDonorProfilePicChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardDonorProfilePic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="@string/change"
+            android:textColor="@color/blue_700" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlDonorProfileMobileNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorProfilePicChange"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/mobile_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDonorProfileMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mobile_no"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="false"
+                android:inputType="none"
+                android:maxLength="10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlDonorProfileEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlDonorProfileMobileNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/reg_email_address">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDonorProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:enabled="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlDonorProfileUserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlDonorProfileEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDonorProfileUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_text_1"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="false"
+                android:hint="@string/name"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlDonorProfileGender"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlDonorProfileUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/gender">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/acDonorProfileGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_person_dark"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlDonorProfileDOB"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlDonorProfileGender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/date_of_birth">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDonorProfileDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_calender_edit_dark"
+                android:drawablePadding="10dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlDonorProfileBloodGroup"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlDonorProfileDOB"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/blood_group">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDonorProfileBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_blood_type_dark"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDonorProfileEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlDonorProfileBloodGroup"
+            android:paddingVertical="14dp"
+            android:text="@string/edit_profile"
+            app:icon="@drawable/ic_edit"
+            app:iconGravity="textStart"
+            android:layout_marginBottom="26dp"
+            app:backgroundTint="@color/blue_700"/>
+
+
+    </RelativeLayout>
+</ScrollView>

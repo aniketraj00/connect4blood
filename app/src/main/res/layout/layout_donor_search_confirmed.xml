@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DonorSearchStatusConfirmed"
+    android:paddingBottom="16dp"
+    android:background="@drawable/gradient_primary_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/txtSearchStatusHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_confirmed"
+            android:textSize="22sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#333"/>
+
+        <TextView
+            android:id="@+id/txtSearchStatusSubHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donor_search_confirmed_txt"
+            android:layout_below="@id/txtSearchStatusHead"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:layout_marginBottom="24dp"/>
+
+        <FrameLayout
+            android:id="@+id/requestDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSearchStatusSubHead"/>
+
+        <TextView
+            android:id="@+id/txtDonorListHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/requestDesc"
+            android:text="@string/donors_list"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/txtDonorListSubHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorListHead"
+            android:text="@string/waiting_for_donors"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDonorsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorListSubHead"
+            android:layout_marginBottom="24dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

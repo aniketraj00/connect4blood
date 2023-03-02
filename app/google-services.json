@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "233502348831",
+    "firebase_url": "https://connect4blood-default-rtdb.firebaseio.com",
+    "project_id": "connect4blood",
+    "storage_bucket": "connect4blood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233502348831:android:f8eb153a527bf613f8e72a",
+        "android_client_info": {
+          "package_name": "com.aniket.connect4blood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233502348831-trk5fnmch0t08g6fg60lrtvom0f9h960.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aniket.connect4blood",
+            "certificate_hash": "6e94e19b8764e766eb80b5868888b7e83addca12"
+          }
+        },
+        {
+          "client_id": "233502348831-hboqrdml4gg3ftm38iq76mm0na4gamk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeV0CeXrk6vkmAazduovLKnQZ8o0_KdUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233502348831-hboqrdml4gg3ftm38iq76mm0na4gamk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RecipientLogin"
+    android:background="@drawable/gradient_primary_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.RecipientLogin"
+        android:orientation="vertical"
+        android:layout_margin="24dp">
+
+        <TextView
+            android:id="@+id/txtRecipientLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="22sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipient_login_txt"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:startIconDrawable="@drawable/ic_mobile_no">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecipientMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_no_hint"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRecipientSendOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/btn_rounded_stroke"
+            android:text="@string/send_otp"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_send_light"
+            app:iconGravity="textEnd"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+</ScrollView>

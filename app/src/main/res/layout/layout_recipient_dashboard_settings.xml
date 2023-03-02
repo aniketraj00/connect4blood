@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RecipientDashboardSettings"
+    android:background="@drawable/gradient_primary_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="22sp"
+            android:paddingHorizontal="18dp"
+            android:layout_marginBottom="10dp"
+             />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/shimmer_bg"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtSettingsFAQs"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faqs"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/ic_help"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSettingsRefer"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refer_a_friend"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/ic_share"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSettingsRaiseComplaint"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/raise_complaint"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/ic_support"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSettingsAbout"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/ic_info"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSettingsLogout"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/ic_logout" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

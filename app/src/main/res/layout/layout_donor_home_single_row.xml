@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtRecipientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipient_name_placeholder"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/txtHospitalNameAndDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city_hospital"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/txtHospitalAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="3dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAcceptRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_check"
+            android:text="@string/accept"
+            app:cornerRadius="6dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

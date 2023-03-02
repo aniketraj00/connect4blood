@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    tools:context=".fragments.DonorSettingsHistory"
+    android:background="@drawable/gradient_primary_bg">
+
+    <TextView
+        android:id="@+id/txtDonationHistoryHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donation_history"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txtDonationHistorySubHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donation_history_txt"
+        android:textSize="15sp"
+        android:layout_below="@id/txtDonationHistoryHead"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <include
+        android:id="@+id/layoutEmptyRes"
+        layout="@layout/layout_res_empty"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDonationHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtDonationHistorySubHead"/>
+
+</RelativeLayout>

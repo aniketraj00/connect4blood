@@ -1,0 +1,116 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlDonorLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.DonorLogin"
+    style="@style/Theme.Connect4Blood"
+    android:background="@drawable/gradient_primary_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="24dp">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_txt"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorLoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/login_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#616161"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_lock_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+
+                    android:hint="@string/login_password_hint"
+                    android:inputType="textPassword"
+                    android:textColorHint="#616161"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtDonorPassResetLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textSize="14sp"
+                android:textColor="@color/blue_700"
+                android:layout_gravity="end"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnDonorLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/btn_rounded_stroke"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                app:icon="@drawable/ic_login"
+                app:iconGravity="textEnd"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtDonorRegisterLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_as_donor"
+                android:textSize="14sp"
+                android:textColor="@color/blue_700"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="8dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

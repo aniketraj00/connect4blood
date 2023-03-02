@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.Main"
+    android:background="@drawable/gradient_primary_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/connect4blood_logo_icon"
+            android:contentDescription="@string/user_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_am"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textSize="28sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnDonor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/donor_txt"
+            android:textSize="18sp"
+            android:minHeight="48dp"
+            android:layout_marginHorizontal="32dp"
+            android:textAllCaps="false"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_rounded_stroke"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRecipient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recipient_txt"
+            android:textSize="18sp"
+            android:minHeight="48dp"
+            android:layout_marginHorizontal="32dp"
+            android:textAllCaps="false"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_rounded_stroke"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

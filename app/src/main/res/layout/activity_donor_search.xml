@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DonorSearch"
+    android:background="@drawable/gradient_primary_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_donors_nearby"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/donor_search_txt"
+                android:textSize="16sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_text_1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorSearchFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recipient_requester_name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_blood_type_dark">
+
+                <AutoCompleteTextView
+                    android:id="@+id/acDonorSearchBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/blood_group"
+                    android:inputType="none"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorSearchBloodUnits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/units_required"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_location">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorSearchRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/within_radius"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_hospital">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorSearchHospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hospital_name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:startIconDrawable="@drawable/ic_location_pin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDonorSearchHospitalAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hospital_address"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:minHeight="48dp"
+                android:text="@string/donor_search_terms" />
+
+            <Button
+                android:id="@+id/btnDonorSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:minHeight="50dp"
+                android:layout_marginBottom="12dp"
+                app:backgroundTint="@null"
+                app:icon="@drawable/ic_search"
+                app:iconGravity="textEnd"
+                android:background="@drawable/btn_rounded_stroke"/>
+
+            <TextView
+                android:id="@+id/txtViewTermsLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_horizontal"
+                android:text="@string/terms_of_usage"
+                android:textColor="@color/blue_700"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

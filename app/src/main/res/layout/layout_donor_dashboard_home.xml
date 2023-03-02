@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/gradient_primary_bg">
+
+    <TextView
+        android:id="@+id/txtDonorDashboardHomeHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incoming_requests"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/txtDonorDashboardHomeSubHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDonorDashboardHomeHead"
+        android:text="@string/donor_home_subhead_txt"
+        android:layout_marginBottom="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDonorDashboardHomeSubHead"
+        android:id="@+id/donorDashboardRecyclerView" />
+
+    <include
+        android:id="@+id/emptyViewLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDonorDashboardHomeSubHead"
+        layout="@layout/layout_res_empty"
+        android:layout_marginTop="22dp"/>
+
+</RelativeLayout>
